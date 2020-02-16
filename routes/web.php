@@ -12,3 +12,5 @@
 */
 
 Route::get('/','WebController@index')->name('home');
+
+Route::get('/{currency_id}','RatesController@index')->name('currency');

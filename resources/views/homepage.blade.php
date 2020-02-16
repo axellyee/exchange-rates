@@ -31,7 +31,7 @@
             <tbody>
                 @foreach($rates['rates'] as $rate)
                     <tr class="border-blue-800 border-b">
-                        <td class="px-4 py-2 text-center">{{ $rate->currency->name }}</td>
+                        <td class="px-4 py-2 text-center"><a class="hover:text-orange-400" href="{{ route('currency', ['currency_id' => $rate->currency_id]) }}">{{ $rate->currency->name }}</a></td>
                         <td class="px-4 py-2 border-l border-blue-800 text-right">{{ number_format($rate->rate, 5) }}</td>
                     </tr>
                 @endforeach
