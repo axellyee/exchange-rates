@@ -4,6 +4,11 @@ Fresh installation for new project
 
 ## Installation
 
+First you need to clone this project in empty folder
+
+```bash
+$ git clone https://github.com/axellyee/exchange-rates.git
+
 Install NPM Dependencies
 
 ```bash
